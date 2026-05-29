@@ -7,7 +7,9 @@
   --secondary-bg: #f9f9f9;
 }
 
-* { box-sizing: border-box; }
+* {
+  box-sizing: border-box;
+}
 
 body {
   font-family: -apple-system, BlinkMacSystemFont, "Segoe UI", Roboto, Helvetica, Arial, sans-serif, "Apple Color Emoji", "Segoe UI Emoji", "Segoe UI Symbol";
@@ -20,35 +22,77 @@ body {
   line-height: 1.6;
 }
 
-h1, h2, h3 { 
-  font-weight: 600; 
+h1,
+h2,
+h3 {
+  font-weight: 600;
   letter-spacing: -0.02em;
   margin-top: 0;
 }
 
-h1 { font-size: 2.5em; margin-bottom: 8px; }
-h2 { font-size: 1.5em; margin-top: 48px; margin-bottom: 24px; border-bottom: 1px solid var(--border); padding-bottom: 8px; }
-h3 { font-size: 1.1em; margin-bottom: 12px; }
-
-p { margin-bottom: 1.5em; color: var(--text-muted); }
-b { color: var(--text); }
-
-a { 
-  color: var(--text); 
-  text-decoration: none; 
-  border-bottom: 1px solid #ccc;
-  transition: border-color 0.2s;
+h1 {
+  font-size: 2.5em;
+  margin-bottom: 8px;
 }
-a:hover { border-bottom-color: var(--text); }
 
-hr { border: none; border-top: 1px solid var(--border); margin: 40px 0; }
+h2 {
+  font-size: 1.5em;
+  margin-top: 48px;
+  margin-bottom: 24px;
+  border-bottom: 1px solid var(--border);
+  padding-bottom: 8px;
+}
+
+h3 {
+  font-size: 1.1em;
+  margin-bottom: 12px;
+}
+
+p {
+  margin-bottom: 1.5em;
+  color: var(--text-muted);
+}
+
+b {
+  color: var(--text);
+}
+
+a {
+  color: blue;
+  text-decoration: underline;
+  transition: color 0.2s;
+}
+
+a:hover {
+  color: darkblue;
+}
+
+hr {
+  border: none;
+  border-top: 1px solid var(--border);
+  margin: 40px 0;
+}
 
 /* Layout Utilities */
-.flex { display: flex; }
-.flex-col { flex-direction: column; }
-.gap-4 { gap: 16px; }
-.gap-8 { gap: 32px; }
-.items-center { align-items: center; }
+.flex {
+  display: flex;
+}
+
+.flex-col {
+  flex-direction: column;
+}
+
+.gap-4 {
+  gap: 16px;
+}
+
+.gap-8 {
+  gap: 32px;
+}
+
+.items-center {
+  align-items: center;
+}
 
 /* Header */
 header {
@@ -56,6 +100,26 @@ header {
   align-items: flex-start;
   gap: 32px;
   margin-bottom: 48px;
+  justify-content: space-between;
+}
+
+section {
+  margin-bottom: 48px;
+}
+
+.header-content p {
+  color: var(--text);
+  font-weight: 500;
+  margin-bottom: 6px;
+}
+
+.focus-tags {
+  color: var(--text-muted);
+  font-size: 0.9em;
+  margin-bottom: 16px;
+  display: flex;
+  gap: 8px;
+  flex-wrap: wrap;
 }
 
 .profile-img {
@@ -66,10 +130,26 @@ header {
   background: #eee;
 }
 
-.header-content h1 { margin: 0; }
-.header-links { margin-top: 16px; font-size: 0.9em; }
-.header-links a { margin-right: 12px; border-bottom: none; color: var(--text-muted); }
-.header-links a:hover { color: var(--text); }
+.header-content h1 {
+  margin: 0;
+}
+
+.header-links {
+  margin-top: 16px;
+  font-size: 0.9em;
+}
+
+.header-links a {
+  margin-right: 12px;
+  border-bottom: none;
+  color: var(--text-muted);
+  text-decoration: none;
+}
+
+.header-links a:hover {
+  color: var(--text);
+  text-decoration: none;
+}
 
 /* Principles / Weapons */
 .principles-grid {
@@ -84,28 +164,50 @@ header {
   border-radius: 12px;
 }
 
-.principle-card h3 { margin-bottom: 8px; }
-.principle-card p { margin: 0; font-size: 0.95em; }
+.principle-card h3 {
+  margin-bottom: 8px;
+}
+
+.principle-card p {
+  margin: 0;
+  font-size: 0.95em;
+}
 
 /* Projects & Contributions */
 .project-row {
   display: flex;
   gap: 24px;
-  margin-bottom: 32px;
+  margin-bottom: 24px;
   align-items: flex-start;
+  border-bottom: 1px solid var(--border);
+  padding-bottom: 24px;
 }
 
 .project-row img {
-  width: 140px;
-  height: 94px;
-  object-fit: cover;
+  width: 80px;
+  height: auto;
+  object-fit: contain;
   border: 1px solid var(--border);
   border-radius: 8px;
   flex-shrink: 0;
 }
 
-.project-row div { flex: 1; }
-.project-row p { margin-bottom: 0; font-size: 0.95em; }
+.project-row div {
+  flex: 1;
+  font-size: 0.95em;
+  color: var(--text);
+}
+
+#bio p {
+  font-size: 1.05em;
+  line-height: 1.8;
+  color: var(--text);
+}
+
+.project-row p {
+  margin-bottom: 0;
+  font-size: 0.95em;
+}
 
 /* Skills */
 .skills-section {
@@ -114,8 +216,19 @@ header {
   gap: 24px;
 }
 
-.skill-cat h3 { font-size: 0.9em; text-transform: uppercase; color: var(--text-muted); letter-spacing: 0.05em; }
-.skill-list { display: flex; flex-wrap: wrap; gap: 8px; }
+.skill-cat h3 {
+  font-size: 0.9em;
+  text-transform: uppercase;
+  color: var(--text-muted);
+  letter-spacing: 0.05em;
+}
+
+.skill-list {
+  display: flex;
+  flex-wrap: wrap;
+  gap: 8px;
+}
+
 .skill-tag {
   font-size: 0.85em;
   background: var(--secondary-bg);
@@ -125,14 +238,29 @@ header {
 }
 
 /* Achievements */
-.achievements-list { list-style: none; padding: 0; }
+.achievements-list {
+  list-style: none;
+  padding: 0;
+}
+
 .achievement-item {
   padding: 16px 0;
   border-bottom: 1px solid var(--border);
 }
-.achievement-item:last-child { border-bottom: none; }
-.achievement-item h3 { margin-bottom: 4px; }
-.achievement-item .meta { font-size: 0.9em; color: var(--text-muted); margin-bottom: 8px; }
+
+.achievement-item:last-child {
+  border-bottom: none;
+}
+
+.achievement-item h3 {
+  margin-bottom: 4px;
+}
+
+.achievement-item .meta {
+  font-size: 0.9em;
+  color: var(--text-muted);
+  margin-bottom: 8px;
+}
 
 /* Footer */
 footer {
@@ -145,8 +273,22 @@ footer {
 }
 
 @media (max-width: 600px) {
-  header { flex-direction: column; text-align: center; align-items: center; }
-  .principles-grid { grid-template-columns: 1fr; }
-  .project-row { flex-direction: column; }
-  .project-row img { width: 100%; height: auto; }
+  header {
+    flex-direction: column;
+    text-align: center;
+    align-items: center;
+  }
+
+  .principles-grid {
+    grid-template-columns: 1fr;
+  }
+
+  .project-row {
+    flex-direction: column;
+  }
+
+  .project-row img {
+    width: 100%;
+    height: auto;
+  }
 }

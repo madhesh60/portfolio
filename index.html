@@ -1,126 +1,184 @@
 <!DOCTYPE html>
 <html lang="en">
+
 <head>
   <meta charset="UTF-8">
   <meta name="viewport" content="width=device-width, initial-scale=1.0">
   <title>Madhesh | Portfolio</title>
   <link rel="icon" type="image/svg+xml" href="Assets/computer-svgrepo-com.svg">
   <link rel="stylesheet" href="style.css">
+  <link rel="stylesheet" href="lightbox.css">
+  <script src="lightbox.js" defer></script>
 </head>
+
 <body>
 
-<header style="justify-content: space-between;">
-  <div class="header-content">
-    <h1>Madhesh</h1>
-    <p style="color: var(--text); font-weight: 500; margin-bottom: 6px;">Software Developer & Agentic AI Enthusiast</p>
-    <div style="color: var(--text-muted); font-size: 0.9em; margin-bottom: 16px; display: flex; gap: 8px; flex-wrap: wrap;">
-      <span>Innovator</span> &bull;
-      <span>Problem Solver</span> &bull;
-      <span>System Architect</span>
+  <header>
+    <div class="header-content">
+      <h1>Madhesh</h1>
+      <p>Building software, AI, and automation
+        solutions that solve real-world problems.</p>
+      <div class="focus-tags">
+        <span>AI Agents and Automation</span> &bull;
+        <span>Deep Learning</span> &bull;
+        <span>Open Source Contribution</span> &bull;
+        <span>Computer Vision</span> &bull;
+        <span>LLM Training</span>
+      </div>
+      <div class="header-links">
+        <a href="mailto:madheshsasikala81@gmail.com">
+          <svg width="16" height="16" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2"
+            stroke-linecap="round" stroke-linejoin="round">
+            <path d="M4 4h16c1.1 0 2 .9 2 2v12c0 1.1-.9 2-2 2H4c-1.1 0-2-.9-2-2V6c0-1.1.9-2 2-2z" />
+            <polyline points="22,6 12,13 2,6" />
+          </svg>
+        </a>
+        <a href="https://github.com/madhesh60">
+          <svg width="16" height="16" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2"
+            stroke-linecap="round" stroke-linejoin="round">
+            <path
+              d="M9 19c-5 1.5-5-2.5-7-3m14 6v-3.87a3.37 3.37 0 0 0-.94-2.61c3.14-.35 6.44-1.54 6.44-7A5.44 5.44 0 0 0 20 4.77 5.07 5.07 0 0 0 19.91 1S18.73.65 16 2.48a13.38 13.38 0 0 0-7 0C6.27.65 5.09 1 5.09 1A5.07 5.07 0 0 0 5 4.77a5.44 5.44 0 0 0-1.5 3.78c0 5.42 3.3 6.61 6.44 7A3.37 3.37 0 0 0 9 18.13V22" />
+          </svg>
+        </a>
+        <a href="https://www.linkedin.com/in/madhesh60">
+          <svg width="16" height="16" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2"
+            stroke-linecap="round" stroke-linejoin="round">
+            <path d="M16 8a6 6 0 0 1 6 6v7h-4v-7a2 2 0 0 0-2-2 2 2 0 0 0-2 2v7h-4v-7a6 6 0 0 1 6-6z" />
+            <rect x="2" y="9" width="4" height="12" />
+            <circle cx="4" cy="4" r="2" />
+          </svg>
+        </a>
+        <a href="https://x.com/madhesh00">
+          <svg width="16" height="16" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2"
+            stroke-linecap="round" stroke-linejoin="round">
+            <path d="M4 4l11.733 16h4.267l-11.733 -16z" />
+            <path d="M4 20l6.768 -6.768m2.46 -2.46l6.772 -6.772" />
+          </svg>
+        </a>
+      </div>
     </div>
-    <div class="header-links" style="display: flex; flex-wrap: wrap;">
-      <a href="mailto:madheshsasikala81@gmail.com" style="display: inline-flex; align-items: center; gap: 6px;">
-        <svg width="16" height="16" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"><path d="M4 4h16c1.1 0 2 .9 2 2v12c0 1.1-.9 2-2 2H4c-1.1 0-2-.9-2-2V6c0-1.1.9-2 2-2z"/><polyline points="22,6 12,13 2,6"/></svg>
-      </a>
-      <a href="https://github.com/madhesh60" style="display: inline-flex; align-items: center; gap: 6px;">
-        <svg width="16" height="16" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"><path d="M9 19c-5 1.5-5-2.5-7-3m14 6v-3.87a3.37 3.37 0 0 0-.94-2.61c3.14-.35 6.44-1.54 6.44-7A5.44 5.44 0 0 0 20 4.77 5.07 5.07 0 0 0 19.91 1S18.73.65 16 2.48a13.38 13.38 0 0 0-7 0C6.27.65 5.09 1 5.09 1A5.07 5.07 0 0 0 5 4.77a5.44 5.44 0 0 0-1.5 3.78c0 5.42 3.3 6.61 6.44 7A3.37 3.37 0 0 0 9 18.13V22"/></svg>
-      </a>
-      <a href="https://www.linkedin.com/in/madhesh60" style="display: inline-flex; align-items: center; gap: 6px;">
-        <svg width="16" height="16" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"><path d="M16 8a6 6 0 0 1 6 6v7h-4v-7a2 2 0 0 0-2-2 2 2 0 0 0-2 2v7h-4v-7a6 6 0 0 1 6-6z"/><rect x="2" y="9" width="4" height="12"/><circle cx="4" cy="4" r="2"/></svg>
-      </a>
-      <a href="https://x.com/madhesh00" style="display: inline-flex; align-items: center; gap: 6px;">
-        <svg width="16" height="16" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"><path d="M4 4l11.733 16h4.267l-11.733 -16z"/><path d="M4 20l6.768 -6.768m2.46 -2.46l6.772 -6.772"/></svg>
-      </a>
-    </div>
-  </div>
-  <img src="Assets/photo.jpg" alt="Madhesh" class="profile-img" onerror="this.style.display='none'">
-</header>
+  </header>
 
-<section id="bio" style="margin-bottom: 48px;">
-  <h2>Bio</h2>
-  <p style="font-size: 1.05em; line-height: 1.8; color: var(--text);">
-    As a dedicated software professional, I specialize in architecting scalable infrastructure and developing robust machine learning solutions. I am committed to advancing the open-source ecosystem while delivering high-quality software that addresses complex challenges.
-  </p>
-</section>
+  <section id="bio">
+    <h2>Bio</h2>
+    <p>
+      I am focused on deepening my skills in AI, automation, and software engineering. 
+      I actively contribute to open-source projects and learn through collaboration with the developer community.
+    </p>
+  </section>
 
-<section>
-  <h2>Projects</h2>
-  <div class="project-row" style="border-bottom: 1px solid #eee; padding-bottom: 24px; margin-bottom: 24px;">
-    <img src="creo.png" alt="CREO for Retail" style="width: 80px; height: 80px;" onerror="this.style.backgroundColor='#eee'">
-    <div style="font-size: 0.95em; color: var(--text);">
-      <a href="https://github.com/madhesh60/CREO-for-retail" style="color: blue; text-decoration: underline; border: none;">CREO for Retail</a> is a state-of-the-art automated design system built to generate localized, brand-compliant retail marketing assets at scale. Unlike standard generative tools, it operates on a "Compliance-First" architecture that strictly enforces brand guidelines, legal requirements, and layout safety zones before generating any content. The system uses a decoupled React and FastAPI architecture, incorporating computer vision to detect human presence and a geometric layout solver to prevent overlaps, ensuring creatives are automatically built for various formats without breaking rules.
+  <section>
+    <h2>Projects</h2>
+    <div class="project-row">
+      <img src="Assets/Proj - CREO.png" alt="CREO for Retail"
+        onerror="this.style.backgroundColor='#eee'">
+      <div>
+        <a href="https://github.com/madhesh60/CREO-for-retail">CREO for Retail</a> is a state-of-the-art
+        automated design system built to generate localized, brand-compliant retail marketing assets at scale. Unlike
+        standard generative tools, it operates on a "Compliance-First" architecture that strictly enforces brand
+        guidelines, legal requirements, and layout safety zones before generating any content. The system uses a
+        decoupled React and FastAPI architecture, incorporating computer vision to detect human presence and a geometric
+        layout solver to prevent overlaps, ensuring creatives are automatically built for various formats without
+        breaking rules.
+      </div>
     </div>
-  </div>
 
-  <div class="project-row" style="border-bottom: 1px solid #eee; padding-bottom: 24px; margin-bottom: 24px;">
-    <img src="safemint.png" alt="SafeMint Token Creator" style="width: 80px; height: 80px;" onerror="this.style.backgroundColor='#eee'">
-    <div style="font-size: 0.95em; color: var(--text);">
-      <a href="https://github.com/madhesh60/tokenCreator" style="color: blue; text-decoration: underline; border: none;">SafeMint</a> is a trust-first token creation and liquidity-locking platform built on the QIE Mainnet. Designed to protect users from rug pulls and malicious token launches, the platform enforces fair launches, locked liquidity, and visible trust signals from day one. By ensuring 100% of provided liquidity is locked automatically for 6–12 months, SafeMint allows users to instantly verify token safety before purchasing, offering a robust solution to secure the decentralized ecosystem.
+    <div class="project-row">
+      <img src="Assets/Proj - Tokencreator.png" alt="SafeMint Token Creator"
+        onerror="this.style.backgroundColor='#eee'">
+      <div>
+        <a href="https://github.com/madhesh60/tokenCreator">SafeMint</a> is a trust-first token creation
+        and liquidity-locking platform built on the QIE Mainnet. Designed to protect users from rug pulls and malicious
+        token launches, the platform enforces fair launches, locked liquidity, and visible trust signals from day one.
+        By ensuring 100% of provided liquidity is locked automatically for 6–12 months, SafeMint allows users to
+        instantly verify token safety before purchasing, offering a robust solution to secure the decentralized
+        ecosystem.
+      </div>
     </div>
-  </div>
 
-  <div class="project-row" style="border-bottom: 1px solid #eee; padding-bottom: 24px; margin-bottom: 24px;">
-    <img src="ipfs.png" alt="IPFS CDN" style="width: 80px; height: 80px;" onerror="this.style.backgroundColor='#eee'">
-    <div style="font-size: 0.95em; color: var(--text);">
-      <a href="https://github.com/madhesh60/IPFS-CDN" style="color: blue; text-decoration: underline; border: none;">IPFS CDN</a> is a decentralized content delivery system built on <a href="https://ipfs.tech/" style="color: blue; text-decoration: underline; border: none;">IPFS</a>, exploring web infrastructure that functions independently of centralized cloud hosting. It provides resilient, peer-to-peer file sharing and static site hosting. The project was featured in several discussions about the decentralized web, see the <a href="#" style="color: blue; text-decoration: underline; border: none;">DWeb Conference talk</a> and <a href="#" style="color: blue; text-decoration: underline; border: none;">this technical blog post</a>. Also related to this, check out my earlier distributed experiments like <a href="#" style="color: blue; text-decoration: underline; border: none;">p2p-chat</a> and <a href="#" style="color: blue; text-decoration: underline; border: none;">distributed-ledger-demo</a>.
+    <div class="project-row">
+      <img src="Assets/Proj - IPFS.png" alt="IPFS CDN"
+        onerror="this.style.backgroundColor='#eee'">
+      <div>
+        <a href="https://github.com/madhesh60/IPFS-CDN">IPFS CDN</a> is a decentralized content
+        delivery system built on <a href="https://ipfs.tech/">IPFS</a>, exploring web infrastructure that
+        functions independently of centralized cloud hosting. It provides resilient, peer-to-peer file sharing and
+        static site hosting. The project was featured in several discussions about the decentralized web, see the <a href="#">DWeb Conference talk</a> and <a href="#">this technical blog post</a>. Also
+        related to this, check out my earlier distributed experiments like <a href="#">p2p-chat</a> and <a href="#">distributed-ledger-demo</a>.
+      </div>
     </div>
-  </div>
 
-  <div class="project-row" style="border-bottom: 1px solid #eee; padding-bottom: 24px; margin-bottom: 24px;">
-    <img src="baseline.png" alt="BaseLine" style="width: 80px; height: 80px;" onerror="this.style.backgroundColor='#eee'">
-    <div style="font-size: 0.95em; color: var(--text);">
-      <a href="https://github.com/madhesh60/BaseLine" style="color: blue; text-decoration: underline; border: none;">BaseLine</a> is a lightweight utility project demonstrating core software engineering principles and streamlined setup.
+    <div class="project-row">
+      <img src="Assets/Proj -Baseline.png" alt="BaseLine"
+        onerror="this.style.backgroundColor='#eee'">
+      <div>
+        <a href="https://github.com/madhesh60/BaseLine">BaseLine</a> is a lightweight utility project
+        demonstrating core software engineering principles and streamlined setup.
+      </div>
     </div>
-  </div>
-</section>
+  </section>
 
-<section>
-  <h2>Open Source</h2>
-  <div class="project-row" style="border-bottom: 1px solid #eee; padding-bottom: 24px; margin-bottom: 24px;">
-    <img src="pytorch.png" alt="PyTorch ExecuTorch" style="width: 80px; height: 80px;" onerror="this.style.backgroundColor='#eee'">
-    <div style="font-size: 0.95em; color: var(--text);">
-      <a href="https://github.com/pytorch/executorch/pull/19508" style="color: blue; text-decoration: underline; border: none;">PyTorch ExecuTorch — Android Docs Refactor</a> was a contribution to unify and improve the Android developer story for <a href="https://pytorch.org/executorch/" style="color: blue; text-decoration: underline; border: none;">ExecuTorch</a>. It involved adding the Java API Reference (Javadoc) link to the main site, refining sidebar entries, and resolving several CI/CD failures related to <a href="#" style="color: blue; text-decoration: underline; border: none;">link-checking</a> and Google-style Java formatting. This work ensures Android developers have a smoother onboarding experience. Also see my other contributions like fixing the <a href="#" style="color: blue; text-decoration: underline; border: none;">pybindings test precision issues</a>.
+  <section>
+    <h2>Open Source</h2>
+    <div class="project-row">
+      <img src="Assets/Pytorch.png" alt="PyTorch ExecuTorch"
+        onerror="this.style.backgroundColor='#eee'">
+      <div>
+        <a href="https://github.com/pytorch/executorch/pull/19508">PyTorch ExecuTorch — Android Docs Refactor</a>
+        was a contribution to unify and improve the Android developer story for <a href="https://pytorch.org/executorch/">ExecuTorch</a>. It involved adding the Java API
+        Reference (Javadoc) link to the main site, refining sidebar entries, and resolving several CI/CD failures
+        related to <a href="#">link-checking</a> and
+        Google-style Java formatting. This work ensures Android developers have a smoother onboarding experience. Also
+        see my other contributions like fixing the <a href="#">pybindings test precision issues</a>.
+      </div>
     </div>
-  </div>
 
-  <div class="project-row" style="border-bottom: 1px solid #eee; padding-bottom: 24px; margin-bottom: 24px;">
-    <img src="sktime.png" alt="sktime" style="width: 80px; height: 80px;" onerror="this.style.backgroundColor='#eee'">
-    <div style="font-size: 0.95em; color: var(--text);">
-      <a href="https://github.com/sktime/sktime/pull/9546" style="color: blue; text-decoration: underline; border: none;">sktime — Automated Lint Failure Guidance</a> introduced a GitHub Actions workflow that automatically posts a helpful guidance message when code-quality checks fail for a pull request. This contribution significantly improves the onboarding experience for new contributors by providing structured instructions on how to resolve formatting violations locally using pre-commit, rather than leaving them to debug cryptic CI pipeline failures. For context, see the <a href="https://github.com/sktime/sktime/pull/9546" style="color: blue; text-decoration: underline; border: none;">merged pull request</a>.
+    <div class="project-row">
+      <img src="Assets/sktime.png" alt="sktime"
+        onerror="this.style.backgroundColor='#eee'">
+      <div>
+        <a href="https://github.com/sktime/sktime/pull/9546">sktime — Automated Lint Failure Guidance</a>
+        introduced a GitHub Actions workflow that automatically posts a helpful guidance message when code-quality
+        checks fail for a pull request. This contribution significantly improves the onboarding experience for new
+        contributors by providing structured instructions on how to resolve formatting violations locally using
+        pre-commit, rather than leaving them to debug cryptic CI pipeline failures. For context, see the <a href="https://github.com/sktime/sktime/pull/9546">merged pull request</a>.
+      </div>
     </div>
-  </div>
 
-  <div class="project-row" style="border-bottom: 1px solid #eee; padding-bottom: 24px; margin-bottom: 24px;">
-    <img src="cyclops.png" alt="Cyclops UI" style="width: 80px; height: 80px;" onerror="this.style.backgroundColor='#eee'">
-    <div style="font-size: 0.95em; color: var(--text);">
-      <a href="https://github.com/cyclops-ui/cyclops/issues/885" style="color: blue; text-decoration: underline; border: none;">Cyclops UI Issue #885</a> was a small open-source contribution to improve the project's documentation and clarity.
+    <div class="project-row">
+      <img src="Assets/cyclops.png" alt="Cyclops UI"
+        onerror="this.style.backgroundColor='#eee'">
+      <div>
+        <a href="https://github.com/cyclops-ui/cyclops/issues/885">Cyclops UI Issue #885</a> was a small
+        open-source contribution to improve the project's documentation and clarity.
+      </div>
     </div>
-  </div>
-</section>
+  </section>
 
-<section>
-  <h2>Blog</h2>
-  
-  <div style="border-left: 3px solid #ccc; padding-left: 12px; margin-bottom: 20px;">
-    <div style="margin-bottom: 4px;">
-      <a href="https://medium.com/@madheshsasikala81/rag-building-reliable-ai-pipelines-0d9881357767" style="color: blue; text-decoration: underline; border-bottom: none;">RAG: Building Reliable AI Pipelines</a>
-      <span style="color: green; margin-left: 8px;">Feb 2026</span>
-    </div>
-    <div style="font-size: 0.95em; color: var(--text);">
-      An exploration of building and deploying robust Retrieval-Augmented Generation pipelines.
-    </div>
-  </div>
+  <section>
+    <h2>Blog</h2>
 
-  <div style="border-left: 3px solid #ccc; padding-left: 12px; margin-bottom: 20px;">
-    <div style="margin-bottom: 4px;">
-      <a href="https://medium.com/@madheshsasikala81/a-medley-of-life-reflections-1973f9757e3b" style="color: blue; text-decoration: underline; border-bottom: none;">A Medley of Life Reflections</a>
-      <span style="color: green; margin-left: 8px;">Mar 2026</span>
+    <div style="border-left: 3px solid #ccc; padding-left: 12px; margin-bottom: 20px;">
+      <div style="margin-bottom: 4px;">
+        <a href="https://medium.com/@madheshsasikala81/rag-building-reliable-ai-pipelines-0d9881357767">RAG: Building Reliable AI Pipelines</a>
+        <span style="color: green; margin-left: 8px;">Feb 2026</span>
+      </div>
+      <div>
+        An exploration of building and deploying robust Retrieval-Augmented Generation pipelines.
+      </div>
     </div>
-    <div style="font-size: 0.95em; color: var(--text);">
-      Personal thoughts and reflections on continuous growth and the journey of life.
-    </div>
-  </div>
-</section>
 
-</body>
+    <div style="border-left: 3px solid #ccc; padding-left: 12px; margin-bottom: 20px;">
+      <div style="margin-bottom: 4px;">
+        <a href="https://medium.com/@madheshsasikala81/a-medley-of-life-reflections-1973f9757e3b">A Medley of Life Reflections</a>
+        <span style="color: green; margin-left: 8px;">Mar 2026</span>
+      </div>
+      <div>
+        Personal thoughts and reflections on continuous growth and the journey of life.
+      </div>
+    </div>
+  </section>
+
+  </body>
+
 </html>
