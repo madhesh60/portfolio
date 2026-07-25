@@ -2,11 +2,11 @@
 % Packages:
 \usepackage[
     ignoreheadfoot,
-    top=0.3 cm,
-    bottom=0.3 cm,
+    top=0.2 cm,
+    bottom=0.2 cm,
     left=0.7 cm,
     right=0.7 cm,
-    footskip=0.3 cm,
+    footskip=0.2 cm,
 ]{geometry}
 \usepackage{titlesec}
 \usepackage{tabularx}
@@ -14,7 +14,7 @@
 \usepackage[dvipsnames]{xcolor}
 \definecolor{primaryColor}{RGB}{0, 0, 0}
 \usepackage{enumitem}
-\setlist[itemize]{topsep=0pt, parsep=0pt, partopsep=0pt, itemsep=-0.8pt, leftmargin=10pt}
+\setlist[itemize]{topsep=0pt, parsep=0pt, partopsep=0pt, itemsep=0pt, leftmargin=10pt}
 \usepackage{fontawesome5}
 \usepackage{amsmath}
 \usepackage[
@@ -49,17 +49,23 @@
 \setlength{\columnsep}{0.15cm}
 \pagenumbering{gobble}
 \titleformat{\section}{\needspace{4\baselineskip}\bfseries\large}{}{0pt}{}[\vspace{0.5pt}\titlerule]
-\titlespacing{\section}{-1pt}{0.22 cm}{0.12 cm}
+\titlespacing{\section}{-1pt}{0.15 cm}{0.06 cm}
 \renewcommand\labelitemi{$\vcenter{\hbox{\small$\bullet$}}$}
 \newenvironment{highlights}{
     \begin{itemize}[topsep=0.10 cm,parsep=0.10 cm,partopsep=0pt,itemsep=0pt,leftmargin=0 cm + 10pt]
-}{\end{itemize}}
+}{
+    \end{itemize}
+}
 \newenvironment{highlightsforbulletentries}{
     \begin{itemize}[topsep=0.10 cm,parsep=0.10 cm,partopsep=0pt,itemsep=0pt,leftmargin=10pt]
-}{\end{itemize}}
+}{
+    \end{itemize}
+}
 \newenvironment{onecolentry}{
     \begin{adjustwidth}{0 cm + 0.00001 cm}{0 cm + 0.00001 cm}
-}{\end{adjustwidth}}
+}{
+    \end{adjustwidth}
+}
 \newenvironment{twocolentry}[2][]{
     \onecolentry
     \def\secondColumn{#2}
@@ -88,7 +94,8 @@
 
 \begin{document}
     \begin{header}
-        \fontsize{25 pt}{25 pt}\selectfont MADHESH T \\
+        \fontsize{22 pt}{22 pt}\selectfont MADHESH T \\
+        \vspace{1pt}
         \normalsize
         \mbox{\href{https://github.com/madhesh60}{madhesh60-Github}}%
         \kern 5.0pt\hspace{0.3cm}\kern 5.0pt%
@@ -99,113 +106,52 @@
         \mbox{\href{https://www.linkedin.com/in/madhesh77}{Madhesh - LinkedIn}}%
     \end{header}
 
-    \vspace{-0.5mm}
+    \vspace{-1.5mm}
 
-    \section{EDUCATION:}
+    \section{EDUCATION}
     \begin{twocolentry}{Sep 2024 -- May 2028}
-        \textbf{Chennai Institute Of Technology} B.Tech Information Technology
+        \textbf{Chennai Institute Of Technology} -- B.Tech Information Technology
     \end{twocolentry}
     \begin{onecolentry}
         \begin{itemize}
-            \item \textbf{CGPA:} 8.4/10 \textbf{Coursework:} Software Engineering, Computational Theory, Web Frameworks, DBMS, Operating Systems, Networking, Algorithm Design
+            \item \textbf{CGPA:} 8.4/10 \hspace{4pt} \textbf{Coursework:} Software Engineering, DBMS, Operating Systems, Algorithms, Web Frameworks, Networking
         \end{itemize}
     \end{onecolentry}
 
-    \vspace{-0.5pt}
+    \vspace{-1pt}
 
-    \section{Open Source Contributions:}
-    \vspace{2pt}
+    \section{TECHNICAL SKILLS}
+    \begin{onecolentry}
+        \begin{itemize}
+            \item \textbf{Languages:} Python, Java, JavaScript, TypeScript, SQL, Solidity, Rust \vspace{-2pt}
+            \item \textbf{AI/ML \& Deep Learning:} PyTorch, TensorFlow, OpenCV, YOLO, CNNs, Scikit-Learn, Pandas, NumPy, NLP \vspace{-2pt}
+            \item \textbf{LLM \& Agentic AI:} RAG, Prompt Engineering, Fine-Tuning, LangChain, LangGraph, MCP, Multi-Agent Systems \vspace{-2pt}
+            \item \textbf{Web \& Cloud:} React.js, Node.js, FastAPI, REST APIs, MongoDB, MySQL, Docker, Kubernetes, AWS, CI/CD \vspace{-2pt}
+            \item \textbf{Tools:} Git, GitHub Actions, Postman, Firebase, Redis, Kafka, Linux, Jupyter, VS Code \vspace{-2pt}
+        \end{itemize}
+    \end{onecolentry}
+
+    \vspace{-1pt}
+
+    \section{PROJECTS}
+    \vspace{1pt}
 
     \begin{twocolentry}{
-        {\hrefWithoutArrow{https://github.com/pytorch/executorch/pull/19508}{\,\faExternalLink*}}%
+        {\hrefWithoutArrow{https://github.com/madhesh60/molecule}{\,\faExternalLink*}}%
     }
         \vspace{-3pt}
-        \textbf{PyTorch ExecuTorch – Android Docs Refactor |}
-        \textit{PyTorch, ExecuTorch, CI/CD, Javadoc}
+        \textbf{Molecule -- MCP Memory Server for AI Agents |}
+        \textit{Python, FastMCP, SQLite, Sentence-Transformers}
     \end{twocolentry}
     \begin{onecolentry}
         \vspace{0mm}
         \begin{itemize}
-            \setlength{\itemsep}{-0.8pt}
-            \setlength{\parsep}{-0.8pt}
-            \item Added Java API Reference (Javadoc) link to the main site and refined Android sidebar navigation entries.
-            \item Fixed CI/CD failures in link-checking and Google-style Java formatting to unblock the PR merge.
+            \item Engineered a drop-in \textbf{MCP server} for persistent agent memory, reducing context token usage by \textbf{78\%}.
+            \item Designed a \textbf{hybrid search router} (semantic embeddings + BM25 + heading match) with a self-learning feedback loop.
+            \item Built zero-LLM fact extraction pipeline with deduplication, conflict detection, and TTL-based expiry.
         \end{itemize}
     \end{onecolentry}
-    \vspace{1.5mm}
-
-    \begin{twocolentry}{
-        {\hrefWithoutArrow{https://github.com/sktime/sktime/pull/9546}{\,\faExternalLink*}}%
-    }
-        \vspace{-3pt}
-        \textbf{sktime – Automated Lint Failure Guidance |}
-        \textit{GitHub Actions, CI/CD, pre-commit, Python}
-    \end{twocolentry}
-    \begin{onecolentry}
-        \vspace{0mm}
-        \begin{itemize}
-            \setlength{\itemsep}{-0.8pt}
-            \setlength{\parsep}{-0.8pt}
-            \item Built a GitHub Actions workflow that auto-posts fix instructions when lint checks fail on a PR.
-            \item Replaced cryptic CI errors with clear pre-commit guidance, improving new contributor onboarding.
-        \end{itemize}
-    \end{onecolentry}
-    \vspace{1.5mm}
-
-    \section{PROJECTS:}
-    \vspace{2pt}
-
-    \begin{twocolentry}{
-        {\hrefWithoutArrow{https://github.com/madhesh60/logos_reasoning_agent}{\,\faExternalLink*}}%
-    }
-        \vspace{-3pt}
-        \textbf{LOGOS – Autonomous Multi-Agent Research System |}
-        \textit{Azure AI Foundry, Python, FastAPI, SQLite, MCP, Docker, CI/CD}
-    \end{twocolentry}
-    \begin{onecolentry}
-        \vspace{0mm}
-        \begin{itemize}
-            \item Orchestrated a sequential \textbf{6-agent reasoning pipeline} on Azure AI Foundry using the Responses and Agents Run APIs.
-            \item Grounded agents with real-time web intelligence using the \textbf{Model Context Protocol (MCP)} with Tavily and Bing search engines.
-            \item Designed dynamic memory layers (Work/Foundry/Fabric IQ) to track user profiles, entity mentions, and historical research insights.
-        \end{itemize}
-    \end{onecolentry}
-    \vspace{1.5mm}
-
-    \begin{twocolentry}{
-        {\hrefWithoutArrow{https://github.com/madhesh60/tokenCreator}{\,\faExternalLink*}}%
-    }
-        \vspace{-3pt}
-        \textbf{SafeMint-QIEDEX – Trust-First Token Launchpad |}
-        \textit{React.js, Solidity, Express, Docker, QIEDEX SDK}
-    \end{twocolentry}
-    \begin{onecolentry}
-        \vspace{0mm}
-        \begin{itemize}
-            \setlength{\itemsep}{-0.8pt}
-            \setlength{\parsep}{-0.8pt}
-            \item Built a \textbf{trust-first DeFi token launch platform} with mandatory liquidity locks and fair-launch rules to prevent rug pulls.
-            \item Added \textbf{community governance workflows} for proposal lifecycle visibility (\textit{Active / Passed}).
-        \end{itemize}
-    \end{onecolentry}
-    \vspace{1.5mm}
-
-    \begin{twocolentry}{
-        {\hrefWithoutArrow{https://github.com/madhesh60/Baseline-Extension}{\,\faExternalLink*}}%
-    }
-        \vspace{-3pt}
-        \textbf{Chrome Baseline Extension |} \textit{JavaScript, Node.js, MDN Baseline API}
-    \end{twocolentry}
-    \begin{onecolentry}
-        \vspace{0mm}
-        \begin{itemize}
-            \setlength{\itemsep}{-0.8pt}
-            \setlength{\parsep}{-0.8pt}
-            \item Built a browser extension scanning code for unsupported web features, improving compliance by \textbf{45\%}.
-            \item Real-time MDN Baseline API checks reduced debugging time by \textbf{30\%} and developer productivity by \textbf{25\%}.
-        \end{itemize}
-    \end{onecolentry}
-    \vspace{1.5mm}
+    \vspace{0.8mm}
 
     \begin{twocolentry}{
         {\hrefWithoutArrow{https://github.com/madhesh60/CREO-for-retail.git}{\,\faExternalLink*}}%
@@ -216,87 +162,100 @@
     \begin{onecolentry}
         \vspace{0mm}
         \begin{itemize}
-            \setlength{\itemsep}{-0.8pt}
-            \setlength{\parsep}{-0.8pt}
-            \item Built a compliance-first AI system generating Tesco-ready retail creatives with strict brand and legal enforcement.
-            \item Fail-fast validation engine blocks forbidden claims, pricing errors, and layout breaches, cutting rejection risk by \textbf{60\%}.
-            \item CV pipeline detects people and alcohol, triggering Drinkaware compliance and automated safe-zone layout enforcement.
+            \item Developed a \textbf{generative AI} system producing retail creatives with strict brand compliance enforcement.
+            \item Built fail-fast validation engine blocking prohibited claims and layout violations, cutting rejections by \textbf{60\%}.
+            \item Deployed \textbf{computer vision pipeline} (OpenCV) for person/alcohol detection and safe-zone enforcement.
         \end{itemize}
     \end{onecolentry}
-    \vspace{1.5mm}
+    \vspace{0.8mm}
+
     \begin{twocolentry}{
-    {\hrefWithoutArrow{https://github.com/madhesh60/IPFS-CDN}{\,\faExternalLink*}}%
-}
-    \vspace{-3pt}
-    \textbf{IPFS-CDN – Blockchain Document Verification |}
-    \textit{React, Solidity, Node.js, IPFS, Pinata, AES-256}
-\end{twocolentry}
-\begin{onecolentry}
-    \vspace{0mm}
-    \begin{itemize}
-        \setlength{\itemsep}{-0.8pt}
-        \setlength{\parsep}{-0.8pt}
-        \item Built a decentralized document verification system storing encrypted files on IPFS via Pinata with on-chain integrity proofs.
-        \item Enforced AES-256 encryption before upload and Solidity smart contract validation on retrieval, eliminating tamper risk.
-    \end{itemize}
-\end{onecolentry}
-\vspace{1.5mm}
-
-    \vspace{-0.5pt}
-
-    \section{Coding Proficiency:}
+        {\hrefWithoutArrow{https://github.com/madhesh60/logos_reasoning_agent}{\,\faExternalLink*}}%
+    }
+        \vspace{-3pt}
+        \textbf{LOGOS -- Multi-Agent Research System |}
+        \textit{Azure AI Foundry, Python, FastAPI, MCP, Docker}
+    \end{twocolentry}
     \begin{onecolentry}
+        \vspace{0mm}
         \begin{itemize}
-            \item \textbf{\href{https://leetcode.com/u/madheshcode7/}{Leetcode}:} 420+ problems solved, contest rating 1435, ranked top 60\% globally. \vspace{-3pt}
-            \item \textbf{Codechef:} Contest rating 900+, strong proficiency in Data Structures and Algorithms. \vspace{-3pt}
+            \item Orchestrated a \textbf{6-agent reasoning pipeline} on Azure AI Foundry using Responses and Agents Run APIs.
+            \item Integrated real-time web search via \textbf{MCP} with Tavily and Bing for retrieval-augmented generation.
+            \item Architected dynamic memory layers for user profiles, entity tracking, and cross-session context.
+        \end{itemize}
+    \end{onecolentry}
+    \vspace{0.8mm}
+
+    \begin{twocolentry}{
+        {\hrefWithoutArrow{https://github.com/madhesh60/BaseLine}{\,\faExternalLink*}}%
+    }
+        \vspace{-3pt}
+        \textbf{BaseLine -- Browser Compatibility Checker |} \textit{JavaScript, VS Code Extension API, MDN BCD API}
+    \end{twocolentry}
+    \begin{onecolentry}
+        \vspace{0mm}
+        \begin{itemize}
+            \item Built a VS Code extension performing \textbf{static analysis} on HTML/CSS/JS against live MDN compatibility data.
+            \item Engineered redirect-aware HTTP fetcher with 24-hour caching and inline hover diagnostics.
         \end{itemize}
     \end{onecolentry}
 
-    \vspace{-0.5pt}
+    \vspace{-1pt}
 
-    \section{Achievements:}
+    \section{OPEN SOURCE CONTRIBUTIONS}
+    \vspace{1pt}
+
+    \begin{twocolentry}{
+        {\hrefWithoutArrow{https://github.com/pytorch/executorch/pull/19508}{\,\faExternalLink*}}%
+    }
+        \vspace{-3pt}
+        \textbf{PyTorch ExecuTorch -- Android Docs Refactor |}
+        \textit{PyTorch, ExecuTorch, CI/CD, Javadoc}
+    \end{twocolentry}
     \begin{onecolentry}
+        \vspace{0mm}
         \begin{itemize}
-            \item \textbf{\href{https://www.linkedin.com/feed/update/urn:li:activity:7426567594813464576/?rcm=ACoAAE75s30BtxiAeYQDdY0DUh39cPFwdczGKS8}{QIE Blockchain Hackathon Winner}} (Built \textbf{SafeMint}, trust-first token creation and liquidity-locking platform) \hfill \textit{Jan 2026}
-            \item \textbf{Tesco Retail Hackathon Finalist} (GenAI creative generator within retail guidelines; Top 40/8000+) \hfill \textit{Dec 2025}
-            \item \textbf{Cardano IBW 2025 Asia Hackathon Finalist} (DeFi app with ZkProof within 30 hours) \hfill \textit{Nov 2025}
-            \item \textbf{\href{https://devpost.com/software/baseline-extension}{Chrome Baseline Hackathon}} (Top 10\% globally for IDE extension scanning unsupported web features) \hfill \textit{Oct 2025}
+            \item Contributed Javadoc API reference and restructured Android SDK sidebar navigation for the official site.
+            \item Resolved CI/CD pipeline failures in link-checking and enforced Google-style Java formatting standards.
+        \end{itemize}
+    \end{onecolentry}
+    \vspace{0.8mm}
+
+    \begin{twocolentry}{
+        {\hrefWithoutArrow{https://github.com/sktime/sktime/pull/9546}{\,\faExternalLink*}}%
+    }
+        \vspace{-3pt}
+        \textbf{sktime -- Automated Lint Failure Guidance |}
+        \textit{GitHub Actions, CI/CD, pre-commit, Python}
+    \end{twocolentry}
+    \begin{onecolentry}
+        \vspace{0mm}
+        \begin{itemize}
+            \item Built a GitHub Actions workflow that auto-posts fix instructions when lint checks fail on pull requests.
+            \item Replaced opaque CI errors with actionable pre-commit guidance, improving contributor onboarding.
         \end{itemize}
     \end{onecolentry}
 
-    \vspace{-0.5pt}
+    \vspace{-1pt}
 
-    \section{Technical Skills:}
+    \section{ACHIEVEMENTS}
     \begin{onecolentry}
         \begin{itemize}
-            \item \textbf{Languages:} Java, JavaScript, Python, Solidity, Rust \vspace{-3pt}
-            \item \textbf{AI Fundamentals:} Pandas, Numpy, TensorFlow, PyTorch, Keras, Scikit-Learn, OpenCV, NLP \vspace{-3pt}
-            \item \textbf{Agentic AI:} LangChain, LangGraph, MCP Servers and Clients, RAG \vspace{-3pt}
-            \item \textbf{DevOps:} Docker, Kubernetes, GitHub Actions, AWS, Kafka, Redis \vspace{-3pt}
-            \item \textbf{Web:} ReactJS, NodeJS, ExpressJS, HTML, CSS, Tailwind CSS, MongoDB, MySQL \vspace{-3pt}
-            \item \textbf{Tools:} n8n, Git, Cursor, Postman, Firebase \vspace{-3pt}
+            \item \textbf{\href{https://medium.com/@madheshsasikala81/rag-building-reliable-ai-pipelines-0d9881357767}{Elastic Blogathon 2026 -- Top 100}} -- Published technical blog on RAG: Building Reliable AI Pipelines \hfill \textit{2026}
+            \item \textbf{\href{https://www.linkedin.com/feed/update/urn:li:activity:7426567594813464576/?rcm=ACoAAE75s30BtxiAeYQDdY0DUh39cPFwdczGKS8}{QIE Blockchain Hackathon Winner}} -- Built SafeMint, trust-first token launch platform \hfill \textit{Jan 2026}
+            \item \textbf{Tesco Retail Hackathon Finalist} -- GenAI creative generator; Top 40 out of 8000+ teams \hfill \textit{Dec 2025}
+            \item \textbf{Cardano IBW 2025 Asia Hackathon Finalist} -- DeFi app with ZK-Proofs, built in 30 hours \hfill \textit{Nov 2025}
+            \item \textbf{\href{https://devpost.com/software/baseline-extension}{Chrome Baseline Hackathon}} -- Top 10\% globally for IDE extension scanning unsupported web features \hfill \textit{Oct 2025}
         \end{itemize}
     \end{onecolentry}
 
-    \vspace{-0.5pt}
+    \vspace{-1pt}
 
-    \section{Certifications:}
+    \section{CODING PROFILES}
     \begin{onecolentry}
-        \centering
-        \begin{tabular}{l l l l}
-            \textbf{\textbullet} Introduction to Cyber Security &
-            \textbf{\textbullet} CCNA-Networking &
-            \textbf{\textbullet} Introduction to MongoDB &
-            \textbf{\textbullet} Blockchain Basics \\
-            \textbf{\textbullet} Git and Github &
-            \textbf{\textbullet} AI-ML Introduction &
-            \textbf{\textbullet} Data Science and Data Analytics &
-            \textbf{\textbullet} Full Stack Development \\
-            \textbf{\textbullet} Programming JavaScript and CSS &
-            \textbf{\textbullet} Introduction to ML &
-            \textbf{\textbullet} Data Engineering Mastery &
-            \textbf{\textbullet} Platform Engineering
-        \end{tabular}
+        \begin{itemize}
+            \item \textbf{\href{https://leetcode.com/u/madheshcode7/}{LeetCode}:} 420+ problems solved, contest rating 1435, top 60\% globally \hspace{6pt} \textbf{CodeChef:} Contest rating 900+
+        \end{itemize}
     \end{onecolentry}
 
 \end{document}
