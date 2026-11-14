@@ -1,0 +1,7 @@
+<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 600 338" role="img" aria-label="Logos">
+<rect width="600" height="338" fill="#fff"/>
+<rect x=".5" y=".5" width="599" height="337" fill="none" stroke="#e6e6e6"/>
+<text x="300" y="164" text-anchor="middle" font-family="Charter,'Bitstream Charter','Palatino Linotype',Palatino,Georgia,serif" font-size="50" fill="#111">Logos</text>
+<line x1="270" y1="188" x2="330" y2="188" stroke="#cfcfcf"/>
+<text x="300" y="218" text-anchor="middle" font-family="ui-monospace,'Cascadia Mono',Menlo,Consolas,monospace" font-size="14" letter-spacing="2.5" fill="#777">MULTI-AGENT RESEARCH</text>
+</svg>
